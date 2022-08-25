@@ -1,29 +1,56 @@
 import React from 'react';
 import styled from "styled-components"
+import { useState } from "react"
 import { MenuOutline } from '@styled-icons/evaicons-outline/MenuOutline'
+import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function Navbar() {
+
+  const [showMenuSection, setShowMenuSection] = useState(false)
   return (
     <Wrapper>
-      <LogoWrapper>
-        <Logo>EgyptainsAbroad</Logo>
-      </LogoWrapper>
+      {showMenuSection ? (
+        <>
+          <MenuWrapper>
+            <CloseIconWrapper>
+              <Close onClick={() => setShowMenuSection(false)} />
+            </CloseIconWrapper>
 
-      <ItemsWrapper>
-        <Item>Networking</Item>
-        <Item>Ask Questions</Item>
-        <Item>Answer Questions</Item>
-      </ItemsWrapper>
+            <MenuItemsWrapper>
+              <MenuItem>Network</MenuItem>
+              <MenuItem>Ask Questions</MenuItem>
+              <MenuItem>Answer Questions</MenuItem>
+            </MenuItemsWrapper>
 
-      <ButtonsWrapper>
-        <LogInButton>Login</LogInButton>
-        <SignUpButton>Sign Up</SignUpButton>
-      </ButtonsWrapper>
+            <MenuButtonWrapper>
+              <MenuLoginButton>Login</MenuLoginButton>
+              <MenuSignUpButton>Sign Up</MenuSignUpButton>
+            </MenuButtonWrapper>
+          </MenuWrapper>
+        </>
+      ) : (
+        <>
+          <LogoWrapper>
+            <Logo>EgyptainsAbroad</Logo>
+          </LogoWrapper>
 
-      <Menu />
+          <ItemsWrapper>
+            <Item>Networking</Item>
+            <Item>Ask Questions</Item>
+            <Item>Answer Questions</Item>
+          </ItemsWrapper>
+
+          <ButtonsWrapper>
+            <LogInButton>Login</LogInButton>
+            <SignUpButton>Sign Up</SignUpButton>
+          </ButtonsWrapper>
+
+          <Menu onClick={() => setShowMenuSection(true)} />
+        </>
+      )}
     </Wrapper>
   );
 }
@@ -33,7 +60,6 @@ export const Wrapper = styled.div`
   background-color: #FFFFFFCC;
   width: 980px;
   height: 70px;
-  border: 3px solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -125,6 +151,79 @@ export const Menu = styled(MenuOutline)`
     width: 30px;
     height: 30px;
   }
+`
+
+//////////////// onClick Menu Section /////////////////
+
+export const MenuWrapper = styled.div`
+  background-color: #FFFFFF;
+  width: 363px;
+  height: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 350px;
+  border-radius: 15px;
+`
+
+export const MenuItemsWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+`
+
+export const MenuItem = styled.p`
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  margin-top: -5px;
+`
+
+export const MenuButtonWrapper = styled.div`
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+`
+
+export const MenuLoginButton = styled.button`
+  background-color: #ECECEC;
+  color: #000000;
+  width: 142px;
+  height: 38px;
+  font-size: 16px;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0px 2px 5px #888888;
+  cursor: pointer;
+`
+
+export const MenuSignUpButton = styled.button`
+  background-color: #1399FF;
+  color: #FFFFFF;
+  width: 142px;
+  height: 38px;
+  font-size: 16px;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0px 2px 5px #888888;
+  cursor: pointer;
+`
+
+export const CloseIconWrapper = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  padding-top: 20px;
+`
+
+export const Close = styled(CloseOutline)`
+  width: 40px;
+  height: 40px;
 `
 
 export default Navbar;
