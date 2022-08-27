@@ -1,22 +1,22 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function FindBusiness() {
-    return (
-        <Wrapper>
-            <TextWrapper>
-                <Header>Expand Your Social & Professional Network <Image src='./img/social-networking.svg' /></Header>
-                <Text>Find egyptians from your city and across the globe who share the same personal and business interests and expand your social and professional network.</Text>
-            </TextWrapper>
+  return (
+    <Wrapper>
+      <TextWrapper>
+        <Header>Expand Your Social & Professional Network <Image src='./img/social-networking.svg' /></Header>
+        <Text>Find egyptians from your city and across the globe who share the same personal and business interests and expand your social and professional network.</Text>
+      </TextWrapper>
 
-            <ButtonWrapper>
-                <Button>Connect Now</Button>
-            </ButtonWrapper>
-        </Wrapper>
-    );
+      <ButtonWrapper>
+        <Button>Connect Now</Button>
+      </ButtonWrapper>
+    </Wrapper>
+  );
 }
 
 
