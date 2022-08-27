@@ -1,24 +1,24 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function AskAnything() {
-    return (
-        <Wrapper>
-            <TextWrapper>
-                <Header>Ask About Anything <Span><Image src='./img/chatting.svg' /></Span> in Your City or Other Citites</Header>
-                <Text>Are you moving to a new city ?</Text>
-                <Text> Do you want to know where is Halal-Food shops ?</Text>
-                <Text>Ask real people from the city that you move to , you will get answers you will never find in Google!</Text>
-            </TextWrapper>
+  return (
+    <Wrapper>
+      <TextWrapper>
+        <Header>Ask About Anything <Span><Image src='./img/chatting.svg' /></Span> in Your City or Other Citites</Header>
+        <Text>Are you moving to a new city ?</Text>
+        <Text> Do you want to know where is Halal-Food shops ?</Text>
+        <Text>Ask real people from the city that you move to , you will get answers you will never find in Google!</Text>
+      </TextWrapper>
 
-            <ButtonWrapper>
-                <Button>Ask Now</Button>
-            </ButtonWrapper>
-        </Wrapper>
-    );
+      <ButtonWrapper>
+        <Button>Ask Now</Button>
+      </ButtonWrapper>
+    </Wrapper>
+  );
 }
 
 
