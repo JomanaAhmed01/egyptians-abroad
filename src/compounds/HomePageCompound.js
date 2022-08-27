@@ -14,8 +14,8 @@ function HomePageCompound() {
       <ConnectEgyptians />
       <AskAnything />
       <FindPeople />
-      <ExpandSocial />
       <FindBusiness />
+      <ExpandSocial />
     </Wrapper>
   );
 }
