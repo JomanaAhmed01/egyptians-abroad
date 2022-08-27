@@ -5,6 +5,7 @@ import ConnectEgyptians from '../components/Homepage/ConnectEgyptains'
 import AskAnything from '../components/Homepage/AskAnything'
 import FindPeople from '../components/Homepage/FindPeople'
 import ExpandSocial from '../components/Homepage/ExpandSocial'
+import FindBusiness from '../components/Homepage/FindBusiness'
 
 function HomePageCompound() {
   return (
@@ -14,6 +15,7 @@ function HomePageCompound() {
       <AskAnything />
       <FindPeople />
       <ExpandSocial />
+      <FindBusiness />
     </Wrapper>
   );
 }
