@@ -6,6 +6,7 @@ import AskAnything from '../components/Homepage/AskAnything'
 import FindPeople from '../components/Homepage/FindPeople'
 import ExpandSocial from '../components/Homepage/ExpandSocial'
 import FindBusiness from '../components/Homepage/FindBusiness'
+import AskForAdvice from '../components/Homepage/AskForAdvice'
 
 function HomePageCompound() {
   return (
@@ -16,6 +17,7 @@ function HomePageCompound() {
       <FindPeople />
       <FindBusiness />
       <ExpandSocial />
+      <AskForAdvice />
     </Wrapper>
   );
 }
