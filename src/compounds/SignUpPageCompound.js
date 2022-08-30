@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from "styled-components"
+import Logo from '../components/SignUpPage/Logo'
 
 function SignUpPageCompound() {
   return (
     <Wrapper>
-      xxxxxxxxxxxx
+      <Logo />
     </Wrapper>
   );
 }
