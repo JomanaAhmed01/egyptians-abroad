@@ -9,6 +9,7 @@ import FindBusiness from '../components/Homepage/FindBusiness'
 import AskForAdvice from '../components/Homepage/AskForAdvice'
 import AskAboutVisa from '../components/Homepage/AskAboutVisa'
 import DiveIn from '../components/Homepage/DiveIn'
+import Footer from '../components/Homepage/Footer'
 
 function HomePageCompound() {
   return (
@@ -22,6 +23,7 @@ function HomePageCompound() {
       <AskForAdvice />
       <AskAboutVisa />
       <DiveIn />
+      <Footer />
     </Wrapper>
   );
 }
