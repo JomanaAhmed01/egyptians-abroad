@@ -21,15 +21,12 @@ function DiveIn() {
 
 
 export const Wrapper = styled.div`
-  
+  margin-top: 200px;
 `
 
 export const TextWrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `
 
 export const FirstHeader = styled.p`
@@ -38,6 +35,13 @@ export const FirstHeader = styled.p`
   letter-spacing: -1px;
   width: 100%;
   text-align: center;
+  font-weight: bold;
+  margin-bottom: -30px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 32px;
+    margin-bottom: -20px;
+  }
 `
 
 export const SecondHeader = styled.p`
@@ -46,6 +50,11 @@ export const SecondHeader = styled.p`
   letter-spacing: -1px;
   width: 100%;
   text-align: center;
+  font-weight: bold;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 32px;
+  }
 `
 
 export const ButtonWrapper = styled.div`
