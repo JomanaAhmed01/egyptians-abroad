@@ -1,23 +1,23 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function ExpandSocial() {
-    return (
-        <Wrapper>
-            <TextWrapper>
-                <Header>Find a business partner, startup co-founder and investments <Image src='./img/rocket.svg' /></Header>
-                <Text>Looking for a business partner or startup co-founder?</Text>
-                <Text>Looking for investment for your business or investment opportunities?</Text>
-                <Text>Find people who are interested about what you are doing and willing to do business with you.</Text>            </TextWrapper>
+  return (
+    <Wrapper>
+      <TextWrapper>
+        <Header>Find a business partner, startup co-founder and investments <Image src='./img/rocket.svg' /></Header>
+        <Text>Looking for a business partner or startup co-founder?</Text>
+        <Text>Looking for investment for your business or investment opportunities?</Text>
+        <Text>Find people who are interested about what you are doing and willing to do business with you.</Text>            </TextWrapper>
 
-            <ButtonWrapper>
-                <Button>Connect Now</Button>
-            </ButtonWrapper>
-        </Wrapper>
-    );
+      <ButtonWrapper>
+        <Button>Connect Now</Button>
+      </ButtonWrapper>
+    </Wrapper>
+  );
 }
 
 
