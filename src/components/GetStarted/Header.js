@@ -35,6 +35,10 @@ export const Text = styled.p`
   line-height: 1.43;
   width: 460px;
   text-align: center;
+
+  @media screen and (max-width: 500px) {
+    width: 95%;
+  }
 `
 
 export default Header;
