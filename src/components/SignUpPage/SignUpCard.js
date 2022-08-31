@@ -1,39 +1,39 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function SignUpCard() {
-    return (
-        <Wrapper>
-            <HeaderWrapper>
-                <Header>Sign up</Header>
-            </HeaderWrapper>
+  return (
+    <Wrapper>
+      <HeaderWrapper>
+        <Header>Sign up</Header>
+      </HeaderWrapper>
 
-            <FieldsWrapper>
-                <FieldAndLabelWrapper>
-                    <Label>Name</Label>
-                    <Field type='text' />
-                </FieldAndLabelWrapper>
+      <FieldsWrapper>
+        <FieldAndLabelWrapper>
+          <Label>Name</Label>
+          <Field type='text' />
+        </FieldAndLabelWrapper>
 
-                <FieldAndLabelWrapper>
-                    <Label>Email</Label>
-                    <Field type='email' />
-                </FieldAndLabelWrapper>
+        <FieldAndLabelWrapper>
+          <Label>Email</Label>
+          <Field type='email' />
+        </FieldAndLabelWrapper>
 
-                <FieldAndLabelWrapper>
-                    <Label>Password</Label>
-                    <Field type='password' />
-                </FieldAndLabelWrapper>
+        <FieldAndLabelWrapper>
+          <Label>Password</Label>
+          <Field type='password' />
+        </FieldAndLabelWrapper>
 
-                <ButtonWrapper>
-                    <SignUpButton>Sign Up</SignUpButton>
-                    <LoginButton>Login</LoginButton>
-                </ButtonWrapper>
-            </FieldsWrapper>
-        </Wrapper>
-    );
+        <ButtonWrapper>
+          <SignUpButton>Sign Up</SignUpButton>
+          <LoginButton>Login</LoginButton>
+        </ButtonWrapper>
+      </FieldsWrapper>
+    </Wrapper>
+  );
 }
 
 
