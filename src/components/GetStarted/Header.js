@@ -7,7 +7,8 @@ import styled from "styled-components"
 function Header() {
   return (
     <Wrapper>
-      <Header></Header>
+      <HeaderText>Let’s Get Started</HeaderText>
+      <Text>Upload a photo to display on your profile and add some basic information to introduce yourself.</Text>
     </Wrapper>
   );
 }
@@ -17,17 +18,23 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
 `
 
-export const Header = styled.p`
-  color: #1399FF;
-  font-family: 'Caveat', cursive;
-  font-size: 40px;
+export const HeaderText = styled.p`
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
   cursor: pointer;
+`
 
-  @media screen and (max-width: 1024px) {
-    font-size: 25px;
-  } 
+export const Text = styled.p`
+  color: #000000;
+  font-size: 14px;
+  line-height: 1.43;
+  width: 460px;
+  text-align: center;
 `
 
 export default Header;
