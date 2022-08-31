@@ -1,39 +1,34 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
-function SignUpCard() {
-  return (
-    <Wrapper>
-      <HeaderWrapper>
-        <Header>Sign up</Header>
-      </HeaderWrapper>
+function LogInCard() {
+    return (
+        <Wrapper>
+            <HeaderWrapper>
+                <Header>Log in</Header>
+            </HeaderWrapper>
 
-      <FieldsWrapper>
-        <FieldAndLabelWrapper>
-          <Label>Name</Label>
-          <Field type='text' />
-        </FieldAndLabelWrapper>
+            <FieldsWrapper>
+                <FieldAndLabelWrapper>
+                    <Label>Email</Label>
+                    <Field type='email' />
+                </FieldAndLabelWrapper>
 
-        <FieldAndLabelWrapper>
-          <Label>Email</Label>
-          <Field type='email' />
-        </FieldAndLabelWrapper>
+                <FieldAndLabelWrapper>
+                    <Label>Password</Label>
+                    <Field type='password' />
+                </FieldAndLabelWrapper>
 
-        <FieldAndLabelWrapper>
-          <Label>Password</Label>
-          <Field type='password' />
-        </FieldAndLabelWrapper>
-
-        <ButtonWrapper>
-          <SignUpButton>Sign Up</SignUpButton>
-          <LoginButton>Login</LoginButton>
-        </ButtonWrapper>
-      </FieldsWrapper>
-    </Wrapper>
-  );
+                <ButtonWrapper>
+                    <LoginButton>Login</LoginButton>
+                    <SignUpButton>Sign Up</SignUpButton>
+                </ButtonWrapper>
+            </FieldsWrapper>
+        </Wrapper>
+    );
 }
 
 
@@ -41,7 +36,7 @@ export const Wrapper = styled.div`
   margin-left: auto;
   margin-right: auto;
   width: 350px;
-  height: 473px;
+  height: 410px;
   border: 1px solid rgb(19, 153, 255);
   border-radius: 10px;
   padding-left: 30px;
@@ -102,7 +97,7 @@ export const ButtonWrapper = styled.div`
   margin-top: 10px;
 `
 
-export const LoginButton = styled.button`
+export const SignUpButton = styled.button`
   background-color: #ECECEC;
   color: #000000;
   width: 308px;
@@ -118,7 +113,7 @@ export const LoginButton = styled.button`
   }
 `
 
-export const SignUpButton = styled.button`
+export const LoginButton = styled.button`
   background-color: #1399FF;
   color: #FFFFFF;
   width: 308px;
@@ -135,4 +130,4 @@ export const SignUpButton = styled.button`
   }
 `
 
-export default SignUpCard;
+export default LogInCard;
