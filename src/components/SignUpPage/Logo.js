@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function Logo() {
-    return (
-        <Wrapper>
-            <Header>EgyptiansAbroad</Header>
-        </Wrapper>
-    );
+  return (
+    <Wrapper>
+      <Header>EgyptiansAbroad</Header>
+    </Wrapper>
+  );
 }
 
 
