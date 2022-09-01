@@ -3,6 +3,7 @@ import './App.css';
 // import SignUpPageCompound from './compounds/SignUpPageCompound'
 // import LogInPageCompound from './compounds/LogInPageCompound'
 // import GetStartedPageCompound from './compounds/GetStartedPageCompound'
+import AllPostsPageCompound from './compounds/AllPostsPageCompound'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       {/* <SignUpPageCompound /> */}
       {/* <LogInPageCompound /> */}
       {/* <GetStartedPageCompound /> */}
+      <AllPostsPageCompound />
     </div>
   );
 }
