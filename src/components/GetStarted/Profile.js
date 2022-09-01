@@ -7,7 +7,9 @@ import styled from "styled-components"
 function Profile() {
   return (
     <Wrapper>
-
+      <ImagesWrapper>
+        <Image src='./img/avatar.png' />
+      </ImagesWrapper>
     </Wrapper>
   );
 }
@@ -21,23 +23,14 @@ export const Wrapper = styled.div`
   margin-top: 50px;
 `
 
-export const HeaderText = styled.p`
-  color: #000000;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
+export const ImagesWrapper = styled.div`
+  
 `
 
-export const Text = styled.p`
-  color: #000000;
-  font-size: 14px;
-  line-height: 1.43;
-  width: 460px;
-  text-align: center;
-
-  @media screen and (max-width: 500px) {
-    width: 95%;
-  }
+export const Image = styled.img`
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
 `
 
 export default Profile;
