@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from "styled-components"
+import Navbar from '../components/AllPostsPage/Navbar'
 
 function AllPostsPageCompound() {
     return (
         <Wrapper>
-
+          <Navbar />
         </Wrapper>
     );
 }
