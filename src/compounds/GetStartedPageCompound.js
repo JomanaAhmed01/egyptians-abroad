@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Header from '../components/GetStarted/Header'
 import Profile from '../components/GetStarted/Profile'
 import Inputs from '../components/GetStarted/Inputs'
+import Checkboxes from '../components/GetStarted/Checkboxes'
 
 function GetStartedPageCompound() {
   return (
@@ -10,6 +11,7 @@ function GetStartedPageCompound() {
       <Header />
       <Profile />
       <Inputs />
+      <Checkboxes />
     </Wrapper>
   );
 }
