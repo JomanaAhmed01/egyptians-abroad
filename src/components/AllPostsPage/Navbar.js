@@ -1,22 +1,22 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function Navbar() {
-    return (
-        <Wrapper>
-            <LogoWrapper>
-                <Logo>EgyptainsAbroad</Logo>
-            </LogoWrapper>
+  return (
+    <Wrapper>
+      <LogoWrapper>
+        <Logo>EgyptainsAbroad</Logo>
+      </LogoWrapper>
 
-            <UserWrapper>
-                <Username>ojy_ahmed01</Username>
-                <ProfileIcon src='./img/avatar.png' />
-            </UserWrapper>
-        </Wrapper>
-    );
+      <UserWrapper>
+        <Username>ojy_ahmed01</Username>
+        <ProfileIcon src='./img/avatar.png' />
+      </UserWrapper>
+    </Wrapper>
+  );
 }
 
 
