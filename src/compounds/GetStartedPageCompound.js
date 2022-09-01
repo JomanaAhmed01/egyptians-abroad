@@ -4,6 +4,7 @@ import Header from '../components/GetStarted/Header'
 import Profile from '../components/GetStarted/Profile'
 import Inputs from '../components/GetStarted/Inputs'
 import Checkboxes from '../components/GetStarted/Checkboxes'
+import Buttons from '../components/GetStarted/Buttons'
 
 function GetStartedPageCompound() {
   return (
@@ -12,6 +13,7 @@ function GetStartedPageCompound() {
       <Profile />
       <Inputs />
       <Checkboxes />
+      <Buttons />
     </Wrapper>
   );
 }
