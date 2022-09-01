@@ -8,8 +8,8 @@ function Buttons() {
   return (
     <Wrapper>
         <ButtonWrapper>
-          <SignUpButton>Sign Up</SignUpButton>
-          <LoginButton>Login</LoginButton>
+          <CreateProfileButton>Create Profile</CreateProfileButton>
+          <CancelButton>Cancel</CancelButton>
         </ButtonWrapper>
     </Wrapper>
   );
@@ -17,22 +17,23 @@ function Buttons() {
 
 
 export const Wrapper = styled.div`
-  
+  margin-top: 30px;
+  margin-bottom: 30px;
 `
 
 export const ButtonWrapper = styled.div`
-  width: 95%;
+  width: 100%;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
 `
 
-export const LoginButton = styled.button`
+export const CancelButton = styled.button`
   background-color: #ECECEC;
   color: #000000;
-  width: 308px;
+  width: 460px;
   height: 40px;
   font-size: 16px;
   border: none;
@@ -40,15 +41,15 @@ export const LoginButton = styled.button`
   box-shadow: 0px 2px 5px #888888;
   cursor: pointer;
 
-  @media screen and (max-width: 490px) {
-    width: 90%;
+  @media screen and (max-width: 530px) {
+    width: 75%;
   }
 `
 
-export const SignUpButton = styled.button`
+export const CreateProfileButton = styled.button`
   background-color: #1399FF;
   color: #FFFFFF;
-  width: 308px;
+  width: 460px;
   height: 40px;
   font-size: 16px;
   border: none;
@@ -57,8 +58,8 @@ export const SignUpButton = styled.button`
   cursor: pointer;
   margin-bottom: 20px;
 
-  @media screen and (max-width: 490px) {
-    width: 90%;
+  @media screen and (max-width: 530px) {
+    width: 75%;
   }
 `
 
