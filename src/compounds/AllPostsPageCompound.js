@@ -9,7 +9,7 @@ function AllPostsPageCompound() {
     <Wrapper>
       <Navbar />
       <Header />
-      <Posts />
+      {/* <Posts /> */}
     </Wrapper>
   );
 }
