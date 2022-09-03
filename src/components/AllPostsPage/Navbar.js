@@ -22,14 +22,15 @@ function Navbar() {
 
 export const Wrapper = styled.div`
   background-color: #FFFFFFCC;
-  width: 980px;
+  width: 800px;
   height: 70px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  margin-bottom: 50px;
   border-radius: 20px;
   padding-left: 20px;
   padding-right: 20px;
