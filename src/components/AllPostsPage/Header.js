@@ -27,7 +27,7 @@ export const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
   border: 3px solid red;
-
+  width: 99.5%;
 `
 
 export const ProfileImageWrapper = styled.div`
@@ -38,6 +38,11 @@ export const ProfileImage = styled.img`
   width: 128px;
   height: 128px;
   border-radius: 50%;
+
+  @media screen and (max-width: 768px) {
+    width: 118px;
+    height: 118px;
+  }
 `
 
 export const TextWrapper = styled.div`
