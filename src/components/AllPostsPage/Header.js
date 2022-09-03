@@ -1,23 +1,23 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function Header() {
-    return (
-        <Wrapper>
-            <ProfileImageWrapper>
-                <ProfileImage src='./img/avatar.png' />
-            </ProfileImageWrapper>
+  return (
+    <Wrapper>
+      <ProfileImageWrapper>
+        <ProfileImage src='./img/avatar.png' />
+      </ProfileImageWrapper>
 
-            <TextWrapper>
-                <Username>ojy_ahmed01</Username>
-                <Bio>`</Bio>
-                <AllPostsHeader>All Posts</AllPostsHeader>
-            </TextWrapper>
-        </Wrapper>
-    );
+      <TextWrapper>
+        <Username>ojy_ahmed01</Username>
+        <Bio>`</Bio>
+        <AllPostsHeader>All Posts</AllPostsHeader>
+      </TextWrapper>
+    </Wrapper>
+  );
 }
 
 
@@ -26,6 +26,8 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 3px solid red;
+
 `
 
 export const ProfileImageWrapper = styled.div`
