@@ -35,7 +35,7 @@ export const Wrapper = styled.div`
   padding-right: 20px;
 
   @media screen and (max-width: 1024px) {
-    width: 95%;
+    width: 90%;
     justify-content: space-between;
   }
 `
