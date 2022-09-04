@@ -2,7 +2,8 @@ import './App.css';
 // import HomePageCompound from './compounds/HomePageCompound'
 // import SignUpPageCompound from './compounds/SignUpPageCompound'
 // import LogInPageCompound from './compounds/LogInPageCompound'
-import GetStartedPageCompound from './compounds/GetStartedPageCompound'
+// import GetStartedPageCompound from './compounds/GetStartedPageCompound'
+import AllPostsPageCompound from './compounds/AllPostsPageCompound'
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       {/* <HomePageCompound /> */}
       {/* <SignUpPageCompound /> */}
       {/* <LogInPageCompound /> */}
-      <GetStartedPageCompound />
+      {/* <GetStartedPageCompound /> */}
+      <AllPostsPageCompound />
     </div>
   );
 }
