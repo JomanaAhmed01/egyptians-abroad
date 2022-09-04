@@ -1,42 +1,60 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from "styled-components"
 import { PersonCircle } from '@styled-icons/bootstrap/PersonCircle'
 import { Edit } from '@styled-icons/boxicons-solid/Edit'
 import { LogOut } from '@styled-icons/entypo/LogOut'
+import { Close } from '@styled-icons/evil/Close'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function Navbar() {
+
+  const [showMenuSection, setShowMenuSection] = useState(false)
+
   return (
     <Wrapper>
       <LogoWrapper>
         <Logo>EgyptainsAbroad</Logo>
       </LogoWrapper>
 
-      <UserAndMenuWrapper>
-        <UserWrapper>
-          <Username>ojy_ahmed01</Username>
-          <ProfileIcon src='./img/avatar.png' />
-        </UserWrapper>
+      {showMenuSection ? (
+        <>
+          <UserAndMenuWrapper>
+            <MenuUserWrapper onClick={() => setShowMenuSection(true)}>
+              <MenuUsername>ojy_ahmed01</MenuUsername>
+              <MenuProfileIcon src='./img/avatar.png' />
+            </MenuUserWrapper>
+            <MenuWrapper>
+              <ItemWrapper>
+                <Exit onClick={() => setShowMenuSection(false)} />
+              </ItemWrapper>
 
-        <MenuWrapper>
-          <ItemWrapper>
-            <Profile />
-            <Item>My Profile</Item>
-          </ItemWrapper>
+              <ItemWrapper>
+                <Profile />
+                <Item>My Profile</Item>
+              </ItemWrapper>
 
-          <ItemWrapper>
-            <Change />
-            <Item>Edit Profile</Item>
-          </ItemWrapper>
+              <ItemWrapper>
+                <Change />
+                <Item>Edit Profile</Item>
+              </ItemWrapper>
 
-          <ItemWrapper>
-            <Logout />
-            <Item>Logout</Item>
-          </ItemWrapper>
-        </MenuWrapper>
-      </UserAndMenuWrapper>
+              <ItemWrapper>
+                <Logout />
+                <Item>Logout</Item>
+              </ItemWrapper>
+            </MenuWrapper>
+          </UserAndMenuWrapper>
+        </>
+      ) : (
+        <>
+          <UserWrapper onClick={() => setShowMenuSection(true)}>
+            <Username>ojy_ahmed01</Username>
+            <ProfileIcon src='./img/avatar.png' />
+          </UserWrapper>
+        </>
+      )}
     </Wrapper>
   );
 }
@@ -97,8 +115,28 @@ export const ProfileIcon = styled.img`
   border-radius: 50%;
 `
 
+export const MenuUserWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`
+
+export const MenuUsername = styled.p`
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(54, 54, 54);
+  margin-right: 15px;
+`
+
+export const MenuProfileIcon = styled.img`
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  border-radius: 50%;
+`
+
 export const UserAndMenuWrapper = styled.div`
-  margin-bottom: -170px;
+  margin-bottom: -225px;
+  margin-right: -25px;
 `
 
 export const MenuWrapper = styled.div`
@@ -106,12 +144,13 @@ export const MenuWrapper = styled.div`
   border-radius: 22.5px;
   box-shadow: rgb(0 0 0 / 5%) 0px 13px 20px 0px;
   width: 175px;
-  height: 150px;
-  margin-top: 10px;
+  height: auto;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
 `
 
 export const ItemWrapper = styled.div`
@@ -134,6 +173,13 @@ export const Logout = styled(LogOut)`
   width: 15px;
   height: 15px;
   margin-left: -20px;
+`
+
+export const Exit = styled(Close)`
+  width: 25px;
+  height: 25px;
+  position: relative;
+  right: 50px;
 `
 
 export const Item = styled.p`
