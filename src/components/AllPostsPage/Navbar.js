@@ -4,6 +4,7 @@ import { PersonCircle } from '@styled-icons/bootstrap/PersonCircle'
 import { Edit } from '@styled-icons/boxicons-solid/Edit'
 import { LogOut } from '@styled-icons/entypo/LogOut'
 import { Close } from '@styled-icons/evil/Close'
+import { username } from '../../Data/username';
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
@@ -21,10 +22,16 @@ function Navbar() {
       {showMenuSection ? (
         <>
           <UserAndMenuWrapper>
-            <MenuUserWrapper onClick={() => setShowMenuSection(true)}>
-              <MenuUsername>ojy_ahmed01</MenuUsername>
-              <MenuProfileIcon src='./img/avatar.png' />
-            </MenuUserWrapper>
+            {username.map((item) =>
+            (
+              <>
+                <MenuUserWrapper onClick={() => setShowMenuSection(true)}>
+                  <MenuUsername>{item.username}</MenuUsername>
+                  <MenuProfileIcon src={item.image} />
+                </MenuUserWrapper>
+              </>
+            )
+            )}
             <MenuWrapper>
               <ItemWrapper>
                 <Exit onClick={() => setShowMenuSection(false)} />
@@ -49,10 +56,16 @@ function Navbar() {
         </>
       ) : (
         <>
-          <UserWrapper onClick={() => setShowMenuSection(true)}>
-            <Username>ojy_ahmed01</Username>
-            <ProfileIcon src='./img/avatar.png' />
-          </UserWrapper>
+          {username.map((item) =>
+          (
+            <>
+              <UserWrapper onClick={() => setShowMenuSection(true)}>
+                <Username>{item.username}</Username>
+                <ProfileIcon src={item.image} />
+              </UserWrapper>
+            </>
+          )
+          )}
         </>
       )}
     </Wrapper>
