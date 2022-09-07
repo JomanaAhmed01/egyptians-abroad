@@ -1,28 +1,28 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function Posts() {
-    return (
-        <Wrapper>
-            <PostWrapper>
-                <ProfileImage src='./img/avatar.png' />
-                <PostTitle>How to build a Mobile game?</PostTitle>
-            </PostWrapper>
+  return (
+    <Wrapper>
+      <PostWrapper>
+        <ProfileImage src='./img/avatar.png' />
+        <PostTitle>How to build a Mobile game?</PostTitle>
+      </PostWrapper>
 
-            <PostWrapper>
-                <ProfileImage src='./img/avatar.png' />
-                <PostTitle>My third post - Hala</PostTitle>
-            </PostWrapper>
+      <PostWrapper>
+        <ProfileImage src='./img/avatar.png' />
+        <PostTitle>My third post - Hala</PostTitle>
+      </PostWrapper>
 
-            <PostWrapper>
-                <ProfileImage src='./img/avatar.png' />
-                <PostTitle>UK study visa</PostTitle>
-            </PostWrapper>
-        </Wrapper>
-    );
+      <PostWrapper>
+        <ProfileImage src='./img/avatar.png' />
+        <PostTitle>UK study visa</PostTitle>
+      </PostWrapper>
+    </Wrapper>
+  );
 }
 
 
