@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components"
+import { username } from '../../Data/username';
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
@@ -7,15 +8,21 @@ import styled from "styled-components"
 function Header() {
   return (
     <Wrapper>
-      <ProfileImageWrapper>
-        <ProfileImage src='./img/avatar.png' />
-      </ProfileImageWrapper>
+      {username.map((item) =>
+      (
+        <>
+          <ProfileImageWrapper>
+            <ProfileImage src={item.image} />
+          </ProfileImageWrapper>
 
-      <TextWrapper>
-        <Username>ojy_ahmed01</Username>
-        <Bio>`</Bio>
-        <AllPostsHeader>All Posts</AllPostsHeader>
-      </TextWrapper>
+          <TextWrapper>
+            <Username>{item.username}</Username>
+            <Bio>{item.bio}</Bio>
+            <AllPostsHeader>All Posts</AllPostsHeader>
+          </TextWrapper>
+        </>
+      )
+      )}
     </Wrapper>
   );
 }
