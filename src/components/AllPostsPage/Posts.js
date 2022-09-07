@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components"
+import { posts } from '../../Data/posts';
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
@@ -7,20 +8,14 @@ import styled from "styled-components"
 function Posts() {
   return (
     <Wrapper>
-      <PostWrapper>
-        <ProfileImage src='./img/avatar.png' />
-        <PostTitle>How to build a Mobile game?</PostTitle>
-      </PostWrapper>
-
-      <PostWrapper>
-        <ProfileImage src='./img/avatar.png' />
-        <PostTitle>My third post - Hala</PostTitle>
-      </PostWrapper>
-
-      <PostWrapper>
-        <ProfileImage src='./img/avatar.png' />
-        <PostTitle>UK study visa</PostTitle>
-      </PostWrapper>
+      {posts.map((item) =>
+      (
+        <PostWrapper>
+          <ProfileImage src={item.image} />
+          <PostTitle>{item.author}</PostTitle>
+        </PostWrapper>
+      )
+      )}
     </Wrapper>
   );
 }
