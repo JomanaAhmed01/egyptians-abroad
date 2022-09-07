@@ -2,16 +2,19 @@ export const posts = [
     {
         id: 1,
         name: "post",
-        title: 'How to build a Mobile game?',
+        author: 'How to build a Mobile game?',
+        image: '/img/avatar.png',
     },
     {
         id: 2,
         name: "post",
-        title: 'My first post - Hala',
+        author: 'My first post - Hala',
+        image: '/img/avatar.png',
     },
     {
         id: 3,
         name: "post",
-        title: 'UK study Visa',
+        author: 'UK study Visa',
+        image: '/img/avatar.png',
     },
 ]
