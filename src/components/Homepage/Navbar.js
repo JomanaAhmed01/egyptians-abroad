@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components"
 import { useState } from "react"
+import { useHistory } from 'react-router-dom'
 import { MenuOutline } from '@styled-icons/evaicons-outline/MenuOutline'
 import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline'
 <style>
@@ -10,42 +11,45 @@ import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline'
 function Navbar() {
 
   const [showMenuSection, setShowMenuSection] = useState(false)
+
+  const history = useHistory()
+
   return (
     <Wrapper>
       {showMenuSection ? (
         <>
           <MenuWrapper>
-            <CloseIconWrapper>
-              <Close onClick={() => setShowMenuSection(false)} />
+            <CloseIconWrapper onClick={() => setShowMenuSection(false)}>
+              <Close />
             </CloseIconWrapper>
 
             <MenuItemsWrapper>
-              <MenuItem>Network</MenuItem>
-              <MenuItem>Ask Questions</MenuItem>
-              <MenuItem>Answer Questions</MenuItem>
+              <MenuItem onClick={() => history.push('/SignUpPageCompound')}>Network</MenuItem>
+              <MenuItem onClick={() => history.push('/SignUpPageCompound')}>Ask Questions</MenuItem>
+              <MenuItem onClick={() => history.push('/SignUpPageCompound')}>Answer Questions</MenuItem>
             </MenuItemsWrapper>
 
             <MenuButtonWrapper>
-              <MenuLoginButton>Login</MenuLoginButton>
-              <MenuSignUpButton>Sign Up</MenuSignUpButton>
+              <MenuLoginButton onClick={() => history.push('/LogInPageCompound')}>Login</MenuLoginButton>
+              <MenuSignUpButton onClick={() => history.push('/SignUpPageCompound')}>Sign Up</MenuSignUpButton>
             </MenuButtonWrapper>
           </MenuWrapper>
         </>
       ) : (
         <>
-          <LogoWrapper>
+          <LogoWrapper onClick={() => history.push('/')}>
             <Logo>EgyptainsAbroad</Logo>
           </LogoWrapper>
 
           <ItemsWrapper>
-            <Item>Networking</Item>
-            <Item>Ask Questions</Item>
-            <Item>Answer Questions</Item>
+            <Item onClick={() => history.push('/SignUpPageCompound')}>Networking</Item>
+            <Item onClick={() => history.push('/SignUpPageCompound')}>Ask Questions</Item>
+            <Item onClick={() => history.push('/SignUpPageCompound')}>Answer Questions</Item>
           </ItemsWrapper>
 
           <ButtonsWrapper>
-            <LogInButton>Login</LogInButton>
-            <SignUpButton>Sign Up</SignUpButton>
+            <LogInButton onClick={() => history.push('/LogInPageCompound')}>Login</LogInButton>
+            <SignUpButton onClick={() => history.push('/SignUpPageCompound')}>Sign Up</SignUpButton>
           </ButtonsWrapper>
 
           <Menu onClick={() => setShowMenuSection(true)} />
