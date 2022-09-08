@@ -97,6 +97,7 @@ export const Button = styled.button`
   border: 1px solid transparent;
   border-radius: 10px;
   font-size: 16px;
+  cursor: pointer;
 
   @media screen and (max-width: 1024px) {
     text-align: center;
