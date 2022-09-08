@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function FindPeople() {
+
+  const history = useHistory()
+
   return (
     <Wrapper>
       <TextWrapper>
@@ -12,7 +16,7 @@ function FindPeople() {
         <Text>Find egyptians brothers wbo will be around you in Emergency Cases or help you to get a job.</Text>
       </TextWrapper>
 
-      <ButtonWrapper>
+      <ButtonWrapper onClick={() => history.push('/SignUpPageCompound')}>
         <Button>Connect Now</Button>
       </ButtonWrapper>
     </Wrapper>
