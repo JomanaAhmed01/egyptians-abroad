@@ -18,7 +18,7 @@ function Header() {
           <TextWrapper>
             <Username>{item.username}</Username>
             <Bio>{item.bio}</Bio>
-            <AllPostsHeader>All Posts</AllPostsHeader>
+            <AllPostsHeader>My Posts</AllPostsHeader>
           </TextWrapper>
         </>
       )
