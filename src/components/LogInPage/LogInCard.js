@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function LogInCard() {
+
+  const history = useHistory()
+
   return (
     <Wrapper>
       <HeaderWrapper>
@@ -23,8 +27,8 @@ function LogInCard() {
         </FieldAndLabelWrapper>
 
         <ButtonWrapper>
-          <LoginButton>Login</LoginButton>
-          <SignUpButton>Sign Up</SignUpButton>
+          <LoginButton onClick={() => history.push('/AllPostsPageCompound')}>Login</LoginButton>
+          <SignUpButton onClick={() => history.push('/SignUpPageCompound')}>Sign Up</SignUpButton>
         </ButtonWrapper>
       </FieldsWrapper>
     </Wrapper>
