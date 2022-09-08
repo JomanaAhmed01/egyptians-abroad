@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function DiveIn() {
+
+  const history = useHistory()
+
   return (
     <Wrapper>
       <TextWrapper>
@@ -12,7 +16,7 @@ function DiveIn() {
         <SecondHeader>Get started now!</SecondHeader>
       </TextWrapper>
 
-      <ButtonWrapper>
+      <ButtonWrapper onClick={() => history.push('/SignUpPageCompound')}>
         <Button>Get Started</Button>
       </ButtonWrapper>
     </Wrapper>
