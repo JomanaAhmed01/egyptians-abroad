@@ -1,24 +1,24 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function AskForAdvice() {
-    return (
-        <Wrapper>
-            <TextWrapper>
-                <Header>Ask For Advice About Study or Work Abroad  <Image src='./img/departure.svg' /></Header>
-                <Text>Do you want to study abroad?</Text>
-                <Text> Are you planning to work abroad?</Text>
-                <Text>Find egyptians abroad who study and work and ask them about their real experience.</Text>
-            </TextWrapper>
+  return (
+    <Wrapper>
+      <TextWrapper>
+        <Header>Ask For Advice About Study or Work Abroad  <Image src='./img/departure.svg' /></Header>
+        <Text>Do you want to study abroad?</Text>
+        <Text> Are you planning to work abroad?</Text>
+        <Text>Find egyptians abroad who study and work and ask them about their real experience.</Text>
+      </TextWrapper>
 
-            <ButtonWrapper>
-                <Button>Ask Now</Button>
-            </ButtonWrapper>
-        </Wrapper>
-    );
+      <ButtonWrapper>
+        <Button>Ask Now</Button>
+      </ButtonWrapper>
+    </Wrapper>
+  );
 }
 
 
