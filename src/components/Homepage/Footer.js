@@ -1,24 +1,28 @@
 import React from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function Footer() {
-    return (
-        <Wrapper>
-            <LogoWrapper>
-                <Logo>EgyptainsAbroad</Logo>
-            </LogoWrapper>
 
-            <ItemsWrapper>
-                <Item>About</Item>
-                <Item>Terms</Item>
-                <Item>Privacy</Item>
-                <Item>Contact</Item>
-            </ItemsWrapper>
-        </Wrapper>
-    );
+  const history = useHistory()
+
+  return (
+    <Wrapper>
+      <LogoWrapper>
+        <Logo>EgyptainsAbroad</Logo>
+      </LogoWrapper>
+
+      <ItemsWrapper>
+        <Item onClick={() => history.push('/test')}>About</Item>
+        <Item onClick={() => history.push('/test')}>Terms</Item>
+        <Item onClick={() => history.push('/test')}>Privacy</Item>
+        <Item onClick={() => history.push('/test')}>Contact</Item>
+      </ItemsWrapper>
+    </Wrapper>
+  );
 }
 
 
@@ -54,7 +58,7 @@ export const Logo = styled.p`
   color: #9B9B9B;
   font-family: 'Caveat', cursive;
   font-size: 25px;
-  cursor: pointer;
+  cursor: default;
 `
 
 export const ItemsWrapper = styled.div`
