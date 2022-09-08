@@ -10,6 +10,7 @@ function MyProfilePageCompound() {
       <Navbar />
       <Header />
       <HeaderAndButton />
+      <Footer />
     </Wrapper>
   );
 }
