@@ -6,6 +6,7 @@ import SignUpPageCompound from './compounds/SignUpPageCompound'
 import LogInPageCompound from './compounds/LogInPageCompound'
 import GetStartedPageCompound from './compounds/GetStartedPageCompound'
 import AllPostsPageCompound from './compounds/AllPostsPageCompound'
+import MyProfilePageCompound from './compounds/MyProfilePageCompound'
 
 function App() {
   return (
@@ -29,6 +30,10 @@ function App() {
 
         <Route path="/AllPostsPageCompound">
           <AllPostsPageCompound />
+        </Route>
+
+        <Route path="/MyProfilePageCompound">
+          <MyProfilePageCompound />
         </Route>
       </Switch>
     </Router>
