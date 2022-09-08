@@ -1,24 +1,24 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function Footer() {
-    return (
-        <Wrapper>
-            <LogoWrapper>
-                <Logo>EgyptainsAbroad</Logo>
-            </LogoWrapper>
+  return (
+    <Wrapper>
+      <LogoWrapper>
+        <Logo>EgyptainsAbroad</Logo>
+      </LogoWrapper>
 
-            <ItemsWrapper>
-                <Item>About</Item>
-                <Item>Terms</Item>
-                <Item>Privacy</Item>
-                <Item>Contact</Item>
-            </ItemsWrapper>
-        </Wrapper>
-    );
+      <ItemsWrapper>
+        <Item>About</Item>
+        <Item>Terms</Item>
+        <Item>Privacy</Item>
+        <Item>Contact</Item>
+      </ItemsWrapper>
+    </Wrapper>
+  );
 }
 
 
