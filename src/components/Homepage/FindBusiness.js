@@ -1,18 +1,23 @@
 import React from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function FindBusiness() {
+
+  const history = useHistory()
+
   return (
     <Wrapper>
       <TextWrapper>
-        <Header>Expand Your Social & Professional Network <Image src='./img/social-networking.svg' /></Header>
-        <Text>Find egyptians from your city and across the globe who share the same personal and business interests and expand your social and professional network.</Text>
-      </TextWrapper>
+        <Header>Find a business partner, startup co-founder and investments <Image src='./img/rocket.svg' /></Header>
+        <Text>Looking for a business partner or startup co-founder?</Text>
+        <Text>Looking for investment for your business or investment opportunities?</Text>
+        <Text>Find people who are interested about what you are doing and willing to do business with you.</Text>            </TextWrapper>
 
-      <ButtonWrapper>
+      <ButtonWrapper onClick={() => history.push('/SignUpPageCompound')}>
         <Button>Connect Now</Button>
       </ButtonWrapper>
     </Wrapper>
