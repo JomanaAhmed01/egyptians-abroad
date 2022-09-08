@@ -1,15 +1,19 @@
 import React from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function Buttons() {
+
+  const history = useHistory()
+
   return (
     <Wrapper>
       <ButtonWrapper>
-        <CreateProfileButton>Create Profile</CreateProfileButton>
-        <CancelButton>Cancel</CancelButton>
+        <CreateProfileButton onClick={() => history.push('/AllPostsPageCompound')}>Create Profile</CreateProfileButton>
+        <CancelButton onClick={() => history.push('/')}>Cancel</CancelButton>
       </ButtonWrapper>
     </Wrapper>
   );
