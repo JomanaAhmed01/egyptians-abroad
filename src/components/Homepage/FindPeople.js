@@ -1,22 +1,22 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function FindPeople() {
-    return (
-        <Wrapper>
-            <TextWrapper>
-                <Header>Find People to Help You Get a Job or Help in Emergency Cases <Image src='./img/shaking-hands.svg' /></Header>
-                <Text>Find egyptians brothers wbo will be around you in Emergency Cases or help you to get a job.</Text>
-            </TextWrapper>
+  return (
+    <Wrapper>
+      <TextWrapper>
+        <Header>Find People to Help You Get a Job or Help in Emergency Cases <Image src='./img/shaking-hands.svg' /></Header>
+        <Text>Find egyptians brothers wbo will be around you in Emergency Cases or help you to get a job.</Text>
+      </TextWrapper>
 
-            <ButtonWrapper>
-                <Button>Connect Now</Button>
-            </ButtonWrapper>
-        </Wrapper>
-    );
+      <ButtonWrapper>
+        <Button>Connect Now</Button>
+      </ButtonWrapper>
+    </Wrapper>
+  );
 }
 
 
