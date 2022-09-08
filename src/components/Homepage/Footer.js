@@ -58,7 +58,7 @@ export const Logo = styled.p`
   color: #9B9B9B;
   font-family: 'Caveat', cursive;
   font-size: 25px;
-  cursor: pointer;
+  cursor: default;
 `
 
 export const ItemsWrapper = styled.div`
