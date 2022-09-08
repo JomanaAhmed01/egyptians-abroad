@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 import { PersonCircle } from '@styled-icons/bootstrap/PersonCircle'
 import { Edit } from '@styled-icons/boxicons-solid/Edit'
 import { LogOut } from '@styled-icons/entypo/LogOut'
@@ -12,6 +13,8 @@ import { username } from '../../Data/username';
 function Navbar() {
 
   const [showMenuSection, setShowMenuSection] = useState(false)
+
+  const history = useHistory()
 
   return (
     <Wrapper>
@@ -37,7 +40,7 @@ function Navbar() {
                 <Exit onClick={() => setShowMenuSection(false)} />
               </ItemWrapper>
 
-              <ItemWrapper>
+              <ItemWrapper onClick={() => history.push('/MyProfilePageCompound')}>
                 <Profile />
                 <Item>My Profile</Item>
               </ItemWrapper>
