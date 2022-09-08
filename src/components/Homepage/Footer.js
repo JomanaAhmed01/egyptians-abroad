@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function Footer() {
+
+  const history = useHistory()
+
   return (
     <Wrapper>
       <LogoWrapper>
@@ -12,10 +16,10 @@ function Footer() {
       </LogoWrapper>
 
       <ItemsWrapper>
-        <Item>About</Item>
-        <Item>Terms</Item>
-        <Item>Privacy</Item>
-        <Item>Contact</Item>
+        <Item onClick={() => history.push('/test')}>About</Item>
+        <Item onClick={() => history.push('/test')}>Terms</Item>
+        <Item onClick={() => history.push('/test')}>Privacy</Item>
+        <Item onClick={() => history.push('/test')}>Contact</Item>
       </ItemsWrapper>
     </Wrapper>
   );
