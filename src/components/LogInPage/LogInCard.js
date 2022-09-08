@@ -1,34 +1,34 @@
 import React from 'react';
 import styled from "styled-components"
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function LogInCard() {
-    return (
-        <Wrapper>
-            <HeaderWrapper>
-                <Header>Log in</Header>
-            </HeaderWrapper>
+  return (
+    <Wrapper>
+      <HeaderWrapper>
+        <Header>Log in</Header>
+      </HeaderWrapper>
 
-            <FieldsWrapper>
-                <FieldAndLabelWrapper>
-                    <Label>Email</Label>
-                    <Field type='email' />
-                </FieldAndLabelWrapper>
+      <FieldsWrapper>
+        <FieldAndLabelWrapper>
+          <Label>Email</Label>
+          <Field type='email' />
+        </FieldAndLabelWrapper>
 
-                <FieldAndLabelWrapper>
-                    <Label>Password</Label>
-                    <Field type='password' />
-                </FieldAndLabelWrapper>
+        <FieldAndLabelWrapper>
+          <Label>Password</Label>
+          <Field type='password' />
+        </FieldAndLabelWrapper>
 
-                <ButtonWrapper>
-                    <LoginButton>Login</LoginButton>
-                    <SignUpButton>Sign Up</SignUpButton>
-                </ButtonWrapper>
-            </FieldsWrapper>
-        </Wrapper>
-    );
+        <ButtonWrapper>
+          <LoginButton>Login</LoginButton>
+          <SignUpButton>Sign Up</SignUpButton>
+        </ButtonWrapper>
+      </FieldsWrapper>
+    </Wrapper>
+  );
 }
 
 
