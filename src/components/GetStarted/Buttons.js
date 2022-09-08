@@ -7,10 +7,10 @@ import styled from "styled-components"
 function Buttons() {
   return (
     <Wrapper>
-        <ButtonWrapper>
-          <CreateProfileButton>Create Profile</CreateProfileButton>
-          <CancelButton>Cancel</CancelButton>
-        </ButtonWrapper>
+      <ButtonWrapper>
+        <CreateProfileButton>Create Profile</CreateProfileButton>
+        <CancelButton>Cancel</CancelButton>
+      </ButtonWrapper>
     </Wrapper>
   );
 }
