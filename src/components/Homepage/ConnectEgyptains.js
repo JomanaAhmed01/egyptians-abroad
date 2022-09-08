@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from "styled-components"
+import { useHistory } from 'react-router-dom'
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 </style>
 
 function ConnectEgyptians() {
+
+  const history = useHistory()
+
   return (
     <Wrapper>
       <TextWrapper>
@@ -15,13 +19,13 @@ function ConnectEgyptians() {
           ask anything you want to ask and get answers from egyptians <Span>all over the world</Span>.
         </Text>
 
-        <ButtonWrapper>
+        <ButtonWrapper onClick={() => history.push('/SignUpPageCompound')}>
           <Button>Connect Now</Button>
         </ButtonWrapper>
 
         <AccountWrapper>
           <HaveAccount>Already have account ?</HaveAccount>
-          <Login>Login</Login>
+          <Login onClick={() => history.push('/LogInPageCompound')}>Login</Login>
         </AccountWrapper>
       </TextWrapper>
 
